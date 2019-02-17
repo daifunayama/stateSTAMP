@@ -100,12 +100,12 @@ public class UCAStateTable extends JPanel implements ActionListener{
 
 		JLabel gwlabel[] = new JLabel[UCANUM];
 
-		gwlabel[0] = new JLabel("<html>Incorrect<br>Transition<html>");
+		gwlabel[0] = new JLabel("<html>Incorrect<br>transition<html>");
 		gwlabel[1] = new JLabel("<html>No transition <html>");
-		gwlabel[2] = new JLabel("<html>Missing<br>neccesarry action<html>");
-		gwlabel[3] = new JLabel("<html>Occuring<br>unneccesarry<br>action<html>");
+		gwlabel[2] = new JLabel("<html>Incorrect<br>control action<html>");
+		gwlabel[3] = new JLabel("<html>No<br>control action<html>");
 		gwlabel[4] = new JLabel("<html>Too early/late <br>transition <html>");
-		gwlabel[5] = new JLabel("<html>Incorrect <br> parameta<html>");
+		gwlabel[5] = new JLabel("<html>Incorrect value<br>of the state<html>");
 
 		for (int i = 0; i < gwlabel.length; i++) {
 			//gwlabel[i] = new JLabel("Guide word" + String.valueOf((i + 1)));
@@ -383,7 +383,7 @@ public class UCAStateTable extends JPanel implements ActionListener{
 				}
 
 				//ピックアップ時
-				if(panelType == 3)ucaText.setBackground(new Color(255,255,200));
+				if(panelType == 3)ucaText.setBackground(new Color(255,255,100));
 
 				sp.setBounds(0, 0, (int) (CELL_WIDTH * 0.8), (int) (CELL_HEIGHT * 0.7));
 				sp.setBorder(new LineBorder(Color.GRAY, 1, true));
